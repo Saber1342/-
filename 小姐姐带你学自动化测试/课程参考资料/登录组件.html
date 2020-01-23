@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+    function loginClick(){
+    var login_button= document.getElementById('login_button').value;
+    alert("欢迎您"+login_button);
+
+    }
+</script>
+</head>
+<body>
+
+        <table class="login_tb2" cellSpacing=0 cellPadding=0 border=0 align="center">
+
+
+            <tr>
+                <td class="login_td2">
+                <form action="LoginJsp.jsp" name="login" method="post">
+                <table>
+                    <tr>
+                        <td width="115" height="20" class="login_td">登录名：</td>
+                        <td width="115" height="20" class="login_td">
+                            <input id="user_name" type="text" name="username"></td>
+                       
+                    </tr>
+                    <tr>
+                        <td height="20" class="login_td">密 码：</td>
+                        <td height="20" class="login_td">
+                            <input type="password" name="password" id="user_pwd"></td>
+
+                    </tr>
+                    <tr>
+                        <td height="20" colspan="2" align="center">
+                            <input type="reset" value="重置" class="login_button"/>
+                            <input type="button" value="登录" id="login_button" onClick="loginClick()"/> 
+						</td>
+
+                    </tr>
+                </table>
+                </form>
+                </td>
+            </tr>
+
+        </table>
+
+</body>
+
+</html>

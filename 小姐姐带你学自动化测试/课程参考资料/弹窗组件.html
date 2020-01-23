@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div align="center">
+        <h4>hello word</h4>
+        <input type="button" onclick="showAlert2()" value="提示弹窗按钮"/><br>
+        <input type="button" onclick="showAlert()" value="确认弹窗按钮"/><br>
+        <span id="textSpan"></span>
+
+        </div>
+    </body>
+    <script>
+        function showAlert(){
+            document.getElementById("textSpan").innerHTML="";
+
+            if(confirm("你是否确认？")){
+                document.getElementById("textSpan").innerHTML="<font style='color: red;'>您已确认</font>";
+            }else{
+                document.getElementById("textSpan").innerHTML="<font style='color: red;'>您未确认</font>";
+            }
+
+
+
+        }
+
+        function showAlert2(){
+            document.getElementById("textSpan").innerHTML="";
+            alert("hello word ");
+        }
+    </script>
+</html>
